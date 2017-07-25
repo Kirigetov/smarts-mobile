@@ -1,0 +1,32 @@
+.nav-menu
+	&__item
+		border-bottom: 1px solid #cbcbcb
+		&.is-active
+			.nav-menu__link
+				background-color: #ffc000
+			.nav-menu__title
+				color: #a21b43
+			.nav-menu__img
+				@each $s in user,home,catalog,search,cart,diagram,payment,exchange,actions,shop,delivery,service
+					&.nav-menu__img_#{$s}
+						+s(#{$s}_red)
+	&__link
+		display: block
+		height: 44px
+		line-height: 44px
+		padding: 0 15px
+		span
+			vertical-align: middle
+	&__img-wrap
+		display: inline-block
+		width: 40px
+		margin-right: 10px
+		text-align: center
+	&__img
+		display: inline-block
+		@each $s in user,home,catalog,search,cart,diagram,payment,exchange,actions,shop,delivery,service
+			&.nav-menu__img_#{$s}
+				+s(#{$s})
+	&__title
+		font-size: 20px
+		color: #fff
