@@ -1,20 +1,12 @@
 $(document).ready(function() {
 
+	$("#nav-panel").panel().enhanceWithin();
+
 	$('.js-slider').slick({
 		arrows: false,
-		dots: false
+		dots: false,
+		autoplay: true,
+		autoplaySpeed: 2000
 	})
-
-	var snapper = new Snap({
-        element: document.getElementById('content'),
-        disable: 'right'
-    });
-
-    // Get the button
-    var myToggleButton = $('#menuBtn');
-
-    myToggleButton.on('click', function(){
-	    snapper.open('left');
-    });
 
 });

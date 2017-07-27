@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="theme-color" content="#fff">
+	<link rel="stylesheet" media="all" href="css/style.css" >
+	<script src="js/app.js"></script>
+</head>
+<body>
+
+	//=include partials/nav-menu.html  
+	
+	<!-- BEGIN  page-->
+	<div class="page" data-role="page">
+		//=include partials/header.html  
+		
+		<div class="page-container ui-content" role="main">
+
+			<div class="search">
+				<form action="" class="search__form">
+					<input type="text" class="search__input" placeholder="Поиск">
+					<button class="search__btn" type="submit">
+						<span class="icon-search_b"></span>
+					</button>
+				</form>
+			</div>
+
+			<div class="slider border-bold">
+				<ul class="slider__list js-slider">
+					<li class="slider__item">
+						<a href="" class="slider__link">
+							<img src="./img/slider/slide1.jpg" alt="">
+						</a>
+					</li>
+					<li class="slider__item">
+						<a href="" class="slider__link">
+							<img src="./img/slider/slide1.jpg" alt="">
+						</a>
+					</li>
+					<li class="slider__item">
+						<a href="" class="slider__link">
+							<img src="./img/slider/slide1.jpg" alt="">
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="categories">
+				<ul class="categories__list">
+					<li class="categories__item">
+						<a href='' class="category">
+							<div class="category__row">
+								<div class="category__cell category__img">
+									<span class="icon-all_products"></span>
+								</div>
+								<div class="category__cell">
+									<div class="category__title">Все товары</div>
+								</div>
+								<div class="category__cell category__arrow">
+									<span class="icon-arr_right"></span>
+								</div>
+							</div>
+						</a>
+						<div class="categories__content">
+							<div class="products-info">
+								<ul class="products-info__list">
+									<li class="products-info__item">
+										<a href="" class="products-info__link">
+											<table class="product-card">
+										        <tr>
+										            <td class="product-card__cell product-card__cell_center">
+										            	<img src="./img/product_cards/apple_black.jpg" class="product-card__img">
+										            </td>
+										            <td class="product-card__cell">
+										                <div style="display: none" class="product-card__status">
+										                    <div class="product-card__label product-card__label_orange">ХИТ!</div>
+										                </div>
+										                <h3 class="product-card__title">APPLE IPHONE 7 32GB MATT BLACK ОФ.</h2>
+										                <div class="product-card__props">4.7" | 32 ГБ | 12 Мп</div>
+										                <div class="product-card__prices">
+											                <div class="product-card__price-wrap">
+												                <div class="product-card__price">18 699 <div class="product-card__price-currency">грн.</div></div>
+											                </div>
+											                <div class="product-card__price-wrap">
+											                	<div class="product-card__price product-card__price_exchange">18 699 
+												                	<div class="product-card__price-currency">грн.</div>
+												                	<div class="product-card__price_subtext">смартс-обмен</div>
+											                	</div>
+											                </div>
+										                </div>
+										                <div class="product-card__payment">
+										                	<div class="product-card__payment-in">
+											                	<span class="icon-payment_parts"></span>
+											                	<span>Оплата частями</span>
+										                	</div>
+										                </div>
+										            </td>
+										        </tr>
+											</table>
+										</a>
+									</li>
+									<li class="products-info__item">
+										<a href="" class="products-info__link">
+											<table class="product-card">
+										        <tr>
+										            <td class="product-card__cell product-card__cell_center">
+										            	<img src="./img/product_cards/xiomi_redmi.jpg" class="product-card__img">
+										            </td>
+										            <td class="product-card__cell">
+										                <div style="display: none" class="product-card__status">
+										                    <div class="product-card__label product-card__label_orange">ХИТ!</div>
+										                </div>
+										                <h3 class="product-card__title">XIAOMI REDMI NOTE 4X 64GB BLACK</h2>
+										                <div class="product-card__props">5.5" | 64 ГБ | 13 Мп</div>
+										                <div class="product-card__prices">
+											                <div class="product-card__price-wrap">
+												                <div class="product-card__price">18 699 <div class="product-card__price-currency">грн.</div></div>
+											                </div>
+											                <div class="product-card__price-wrap">
+											                	<div class="product-card__price product-card__price_exchange">18 699 
+												                	<div class="product-card__price-currency">грн.</div>
+												                	<div class="product-card__price_subtext">смартс-обмен</div>
+											                	</div>
+											                </div>
+										                </div>
+										                <div class="product-card__payment">
+										                	<div class="product-card__payment-in">
+											                	<span class="icon-payment_parts"></span>
+											                	<span>Оплата частями</span>
+										                	</div>
+										                </div>
+										            </td>
+										        </tr>
+											</table>
+										</a>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="categories__item">
+						<a href='' class="category">
+							<div class="category__row">
+								<div class="category__cell category__img">
+									<span class="icon-actions_box"></span>
+								</div>
+								<div class="category__cell">
+									<div class="category__title">Акции</div>
+								</div>
+								<div class="category__cell category__arrow">
+									<span class="icon-arr_right"></span>
+								</div>
+							</div>
+						</a>
+						<div class="categories__content"></div>
+					</li>
+					<li class="categories__item">
+						<a href='' class="category">
+							<div class="category__row">
+								<div class="category__cell category__img">
+									<span class="icon-shop_gray"></span>
+								</div>
+								<div class="category__cell">
+									<div class="category__title">Магазины</div>
+								</div>
+								<div class="category__cell category__arrow">
+									<span class="icon-arr_right"></span>
+								</div>
+							</div>
+						</a>
+						<div class="categories__content"></div>
+					</li>
+					<li class="categories__item">
+						<a href='' class="category">
+							<div class="category__row">
+								<div class="category__cell category__img">
+									<span class="icon-warranty"></span>
+								</div>
+								<div class="category__cell">
+									<div class="category__title">Гарантия</div>
+								</div>
+								<div class="category__cell category__arrow">
+									<span class="icon-arr_right"></span>
+								</div>
+							</div>
+						</a>
+						<div class="categories__content"></div>
+					</li>
+					<li class="categories__item">
+						<a href='' class="category">
+							<div class="category__row">
+								<div class="category__cell category__img">
+									<span class="icon-delivery_gray"></span>
+								</div>
+								<div class="category__cell">
+									<div class="category__title">Доставка</div>
+								</div>
+								<div class="category__cell category__arrow">
+									<span class="icon-arr_right"></span>
+								</div>
+							</div>
+						</a>
+						<div class="categories__content"></div>
+					</li>
+					<li class="categories__item">
+						<a href='' class="category">
+							<div class="category__row">
+								<div class="category__cell category__img">
+									<span class="icon-service_gray"></span>
+								</div>
+								<div class="category__cell">
+									<div class="category__title">Сервисный центр</div>
+								</div>
+								<div class="category__cell div">
+									<span class="icon-arr_right"></span>
+								</div>
+							</div>
+						</a>
+						<div class="categories__content"></div>
+					</li>
+				</ul>
+			</div>
+
+			//=include partials/footer.html  
+
+		</div>
+	</div>
+	<!-- END page-->
+</body>
+</html>
