@@ -1169,7 +1169,7 @@ img { max-width: 100%; height: auto; }
 .nav-menu__img.nav-menu__img_service { background-image: url("../img/icons.png"); width: 34px; height: 34px; background-position: 0px -42px; }
 .nav-menu__title { font-size: 20px; color: #fff; }
 
-.registration { margin: 0 auto; max-width: 500px; padding: 40px 20px 50px; text-align: center; }
+.registration { margin: 0 auto; max-width: 500px; padding: 40px 20px 20px; text-align: center; }
 .registration .logo_club { width: 190px; margin: 0 auto 20px; }
 
 .form { text-align: left; }
