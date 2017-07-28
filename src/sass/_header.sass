@@ -1,4 +1,5 @@
 .header
+	position: relative
 	height: 45px
 	line-height: 45px
 	padding: 0 18px 
@@ -17,7 +18,7 @@
 		font-size: 20px
 		color: #FFF 
 
-.ui-header .logo
+.logo
 	position: relative
 	right: auto
 	top: auto 
@@ -47,17 +48,18 @@
 	transform: translateY(-50%)
 	+tr(0.3s)
 	z-index: 10
-	// &.is-active
-	// 	span
-	// 		background: none 
-	// 		&:before, &:after
-	// 			transition-delay: 0s, 0.3s	
-	// 		&:before
-	// 			top: 0
-	// 			+rotate(45) 
-	// 		&:after
-	// 			bottom: 0
-	// 			+rotate(-45) 
+	.is-push &
+		left: 10px
+		span
+			background: none 
+			&:before, &:after
+				transition-delay: 0s, 0.3s	
+			&:before
+				top: -1px
+				+rotate(45) 
+			&:after
+				bottom: -1px
+				+rotate(-45) 
 	span
 		position: absolute
 		display: block

@@ -7,18 +7,21 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="theme-color" content="#fff">
 	<link rel="stylesheet" media="all" href="css/style.css" >
-	<script src="js/app.js"></script>
 </head>
-<body>
+<body class="js-main-out">
 
+	<!-- BEGIN  nav-menu-->
 	//=include partials/nav-menu.html  
+	<!-- END nav-menu-->
 	
-	<!-- BEGIN  page-->
-	<div class="page" data-role="page">
-		//=include partials/header.html  
-		
-		<div class="page-container ui-content" role="main">
+	<!-- BEGIN  page-->	
+	<div class="page">
 
+		//=include partials/header.html  
+
+		<div class="page-content">
+
+			<!-- BEGIN search-->
 			<div class="search">
 				<form action="" class="search__form">
 					<input type="text" class="search__input" placeholder="Поиск">
@@ -27,7 +30,9 @@
 					</button>
 				</form>
 			</div>
+			<!-- END search-->
 
+			<!-- BEGIN slider-->
 			<div class="slider border-bold">
 				<ul class="slider__list js-slider">
 					<li class="slider__item">
@@ -47,7 +52,9 @@
 					</li>
 				</ul>
 			</div>
+			<!-- END slider-->
 
+			<!-- BEGIN categories-->
 			<div class="categories">
 				<ul class="categories__list">
 					<li class="categories__item">
@@ -224,6 +231,7 @@
 					</li>
 				</ul>
 			</div>
+			<!-- END categories-->
 
 		</div>
 
@@ -231,5 +239,7 @@
 
 	</div>
 	<!-- END page-->
+	
+	<script src="js/app.js"></script>
 </body>
 </html>
