@@ -2,27 +2,13 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Template</title>
+	<title>Products-list</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
 	<meta name="theme-color" content="#fff">
 	<link rel="stylesheet" media="all" href="css/style.css" >
 	<script src="js/app.js"></script>
 </head>
-
-	<style>
-		.preview-list {
-			padding: 20px 0;
-		}
-		.preview-list a {
-			display: block;
-			height: 35px;
-			line-height: 35px;
-			padding: 0 20px;
-			font-size: 18px;
-		}
-	</style>
-
 <body>
 
 	<div id="nav-panel" class="page-nav" data-role="panel" data-display="push" data-position-fixed="true">
@@ -272,25 +258,82 @@
 	</div>
 	
 	<!-- BEGIN  page-->
-	<div class="page">
-		<header class="header" data-role="header" data-position="fixed">
-			<a href="#nav-panel" data-iconpos="notext" data-role="button" role="button" class="menu-btn"><span class="icon-menu"></span></a>
-			<a href="" class="logo" data-role="none">
-				<img src="img/logo_sm.svg" alt="" class="logo__img">
-			</a>
-			<button class="cart-btn"><span class="icon-cart"></span></button>
-		</header>
-		
-		
-		<div class="page-container">
+	<div class="page" data-role="page">
 
-			<ol class="preview-list">
-				<li><a href="./main.html">Главная страница</a></li>
-				<li><a href="./products-list.html">Все категории</a></li>
-				<li><a href="./products-list_slider.html">Все категории со слайдером</a></li>
-				<li><a href="./registration_step1.html">Регистрация: ввод номера</a></li>
-				<li><a href="./registration_step2.html">Регистрация: ввод кода</a></li>
-			</ol>
+		<header class="header" data-role="header" data-position="fixed">
+
+			<a href="#nav-panel" data-iconpos="notext" data-role="button" role="button" class="menu-btn"><span class="icon-menu"></span></a>
+
+			<a href="" class="logo" data-role="none">
+
+				<img src="img/logo_sm.svg" alt="" class="logo__img">
+
+			</a>
+
+			<button class="cart-btn"><span class="icon-cart"></span></button>
+
+		</header>
+
+		
+
+		<div class="page-container ui-content" >
+
+			<div class="registration">
+
+				<div class="logo logo_club">
+					<img src="img/logo.svg" alt="">
+				</div>
+				
+
+				<h2 class="title-h2 title-h2_dark_gray title-h2_mb_mid">Введите код </h2>
+
+				<div class="subtitle">который отправлен Вам в смс</div>
+
+				<div class="form">
+					<form action="">
+						<div class="form-field">
+							<input class="form-input" type="text" value="" autofocus="autofocus">
+							<button class="button-arrow">
+								<i class="icon-arr_right_w"></i>
+							</button>
+						</div>
+					</form>
+
+					<div class="subtext">Не приходит SMS с кодом?</div>
+					<a href="" class="subtext subtext_red">Отправить SMS еще раз</a>
+					<div class="subtext">или</div>
+					<a href="" class="subtext subtext_red">ввести другой номер</a>
+
+				</div>
+			</div>
+
+			<footer class="footer" data-role="footer" >
+
+				<div class="footer__top border-bold">
+
+					<div class="footer__contacts contacts">
+
+						<h3 class="contacts__title">Поддержка клиентов</h3>
+
+						<a href="tel:096 1 500 500" class="contacts__phone phone-btn"><span class="icon-phone"></span>096 1 500 500</a>
+
+						<div class="contacts__schedule schedule">
+
+							<p>Работаем для Вас <span class="schedule__days">ПН-СБ</span> <span class="schedule__time">10:00 - 20:00</span></p>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="footer__bottom">
+
+					<div class="copyright">© Интернет-магазин Смартс 2017</div>
+
+				</div>
+
+			</footer>
 
 		</div>
 	</div>
