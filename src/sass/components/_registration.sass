@@ -1,12 +1,12 @@
 .registration
 	margin: 0 auto
-	max-width: 500px
+	max-width: 400px
 	padding: 40px 20px 20px
 	text-align: center
-
+	&__img
+		margin: 0 auto 20px
 	.logo_club
 		width: 190px 
-		margin: 0 auto 20px
 
 .form
 	text-align: left
@@ -14,11 +14,36 @@
 .form-field
 	position: relative
 	margin-bottom: 20px 
+	&_mb_sm
+		margin-bottom: 10px
 
 .form-label
+	display: block
 	color: #a21b43
 	font-size: 16px
-
+	&_lg
+		color: #343434
+		margin-bottom: 10px
+	&_sm
+		font-size: 14px
+	&_check
+		span
+			position: relative
+			display: inline-block
+			vertical-align: bottom
+			width: 25px
+			height: 25px
+			background-color: white
+			border: 1px solid #dbdfe2
+			&:after
+				content: '\002714'
+				position: absolute
+				top: 50%
+				left: 50%	
+				transform: translate(-50%, -50%)
+				font-size: 20px
+				transition: opacity 0.2s
+				opacity: 0
 .form-input
 	display: block
 	width: 100% 
@@ -29,6 +54,69 @@
 	font-size: 18px 
 	color: #393939
 
+.form-selects
+	font-size: 0
+
+.form-select
+	position: relative
+	display: inline-block
+	vertical-align: top
+	width: 30%
+	z-index: 1
+	background: #fff
+	&:not(:last-child)
+		padding-right: 5px
+	&:after
+		content: ''
+		position: absolute
+		top: 12px
+		right: 20px
+		+s('arr_right')
+		transform: rotate(90deg)
+		z-index: -1
+	select
+		position: relative
+		width: 100%
+		height: 45px
+		padding: 0 20px 0 10px
+		font-size: 18px
+		color: #333
+		border: 1px solid #dbdfe2
+		appearance: none
+		background: transparent
+
+.form-select_block
+	display: block
+	width: 100%
+	padding-right: 0
+	select
+		padding: 0 20px
+
+.form-select_lg
+	width: 40%
+	&:after
+		right: 15px
+
+.form-textarea
+	display: block
+	width: 100%
+	min-height: 100px
+	background-color: white
+	border: 1px solid #dbdfe2
+	resize: none
+	padding: 5px 10px
+	font-size: 16px
+
+.form-checkbox
+	display: none
+	visibility: hidden
+	opacity: 0
+	&:checked
+		+ .form-label
+			span
+				&:after
+					opacity: 1
+	
 .button-arrow
 	position: absolute
 	right: 0
@@ -42,3 +130,58 @@
 		top: 50%
 		left: 54%  
 		transform: translate(-50%, -50%)
+
+.socials
+	margin-bottom: 40px
+	&__title
+		margin-bottom: 20px
+		line-height: 1
+	&__list
+		text-align: center
+		font: 0
+	&__item
+		display: inline-block
+		vertical-align: top
+		&:not(:last-child)
+			margin-right: 10px
+	&__link
+		display: block
+
+.score
+	max-width: 400px
+	margin: 0 auto 15px
+	padding: 0 10px
+	&__inner
+		padding: 10px
+		background-color: #ffb400
+		border-radius: 5px
+		+clr
+	&__title
+		margin-bottom: 10px
+		text-align: center
+		color: #000
+		font-size: 16px
+		line-height: 16px
+	&__table
+		width: 100%
+		margin-bottom: 5px
+	&__cell
+		height: 26px
+		line-height: 26px
+		&:first-child
+			width: 60%
+		&:last-child
+			width: 40%
+	&__data
+		color: #4a4a4a
+		font-size: 14px
+	&__value
+		color: #4a4a4a
+		font-size: 16px
+		font-weight: bold
+	&__more
+		display: block
+		float: right
+		color: #ad1547
+		font-size: 16px
+		line-height: 1.2

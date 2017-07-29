@@ -284,25 +284,98 @@
 					<img src="img/logo.svg" alt="">
 				</div>
 
-				<h2 class="title-h2 title-h2_dark_gray title-h2_mb_mid">Введите код </h2>
+				<h2 class="title-h2 title-h2_dark_gray title-h2_mb_mid">Регистрация</h2>
 
-				<div class="subtitle">который отправлен Вам в смс</div>
+				<div class="subtitle subtitle_small">Остался последний шаг! <br> Заполните анкету чтобы завершить регистрацию и получить 50 грн. “Горящих бонусов”</div>
 
 				<div class="form">
 					<form action="">
 						<div class="form-field">
-							<input class="form-input" type="text" value="" autofocus="autofocus">
-							<button class="button-arrow">
-								<i class="icon-arr_right_w"></i>
-							</button>
+							<label class="form-label" for="user_email">Ваш e-mail*</label>
+							<input class="form-input" required id="user_email" type="e-mail" value="" name='user_email' autofocus="autofocus">
 						</div>
+						<div class="form-field">
+							<label class="form-label" for="user_name">Ваше имя*</label>
+							<input class="form-input" required name='user_name' id="user_name" type="text" value="">
+						</div>
+						<div class="form-field">
+							<label class="form-label" for="user_surname">Ваша фамилия*</label>
+							<input class="form-input" required id="user_surname" type="text" value="" name='user_surname'>
+						</div>
+						<div class="form-field">
+							<label class="form-label">Дата рождения*</label>
+							<div class="form-selects">
+								<div class="form-select">
+									<select name="day">
+										<option selected value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+										<option value="11">11</option>
+										<option value="12">12</option>
+										<option value="13">13</option>
+										<option value="14">14</option>
+										<option value="15">15</option>
+										<option value="16">16</option>
+										<option value="17">17</option>
+										<option value="18">18</option>
+										<option value="19">19</option>
+										<option value="20">20</option>
+										<option value="21">21</option>
+										<option value="22">22</option>
+										<option value="23">23</option>
+										<option value="24">24</option>
+										<option value="25">25</option>
+										<option value="26">26</option>
+										<option value="27">27</option>
+										<option value="28">28</option>
+										<option value="29">29</option>
+										<option value="30">30</option>
+										<option value="31">31</option>
+									</select>
+								</div>
+								<div class="form-select">
+									<select name="month">
+										<option selected value="01">01</option>
+										<option value="02">02</option>
+										<option value="03">03</option>
+										<option value="04">04</option>
+										<option value="05">05</option>
+										<option value="06">06</option>
+										<option value="07">07</option>
+										<option value="08">08</option>
+										<option value="09">09</option>
+										<option value="10">10</option>
+										<option value="11">11</option>
+										<option value="12">12</option>
+									</select>
+								</div>
+								<div class="form-select form-select_lg">
+									<select name="year">
+										<option value="2013">2013</option>
+										<option value="2012">2012</option>
+										<option value="2010">2010</option>
+										<option value="2009">2009</option>
+										<option value="2008">2008</option>
+										<option value="2007">2007</option>
+										<option value="2006">2006</option>
+										<option value="2005">2005</option>
+										<option value="2004">2004</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						
+						<button class="btn-primary">
+							<span>Сохранить анкету</span>
+						</button>
 					</form>
-
-					<div class="subtext">Не приходит SMS с кодом?</div>
-					<a href="" class="subtext subtext_red">Отправить SMS еще раз</a>
-					<div class="subtext">или</div>
-					<a href="" class="subtext subtext_red">ввести другой номер</a>
-
 				</div>
 			</div>
 

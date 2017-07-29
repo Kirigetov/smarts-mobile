@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Login</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="theme-color" content="#fff">
+	<link rel="stylesheet" media="all" href="css/style.css" >
+</head>
+<body>
+
+	//=include partials/nav-menu.html  
+	
+	<!-- BEGIN  page-->
+	<div class="page">
+
+		//=include partials/header.html  
+
+		<div class="page-content" >
+
+			<h2 class="page-title title-h2 title-h2_dark_gray">Приветствуем Вас <div>Шапошников Станислав</div></h2>
+
+			<!-- BEGIN  score-->
+			<div class="score">
+				<div class="score__inner">
+					<div class="score__title">На Вашем счету доступно:</div>
+					
+					<table class="score__table">
+						<tr>
+							<td class="score__cell">
+								<div class="score__data">Накопительный бонус</div>
+							</td>
+							<td class="score__cell">
+								<div class="score__value">750 грн.</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="score__cell">
+								<div class="score__data">Горящий бонус</div>
+							</td>
+							<td class="score__cell">
+								<div class="score__value">50 грн.</div>
+							</td>
+						</tr>
+					</table>
+
+					<a href="" class="score__more">подробнее о бонусах </a>
+				</div>
+			</div>
+			<!-- END score-->
+
+			<!-- BEGIN orders-->
+			<div class="orders">
+				<div class="orders__title title-h2">Мои заказы</div>
+				<ul class="orders__list">
+					<li class="orders__item order">
+						<div class="order__info">
+							<div class="order__info-row">
+								<div class="order__info-cell order__info-number">#2442</div>
+								<div class="order__info-cell order__info-date">20.07.2017</div>
+								<div class="order__info-cell order__info order__info-cost">12999 грн.</div>
+								<div class="order__info-cell order__info-status">Принят</div>
+							</div>
+						</div>
+						<div class="order__product">Samsung A720F Galaxy A7 Black</div>
+						<div class="order__address">Новая почта (Склад), Пункт выдачи: Отделение №1: ул. Пироговский путь, 135</div>
+					</li>
+
+					<li class="orders__item order">
+						<div class="order__info">
+							<div class="order__info-row">
+								<div class="order__info-cell order__info-number">#2442</div>
+								<div class="order__info-cell order__info-date">20.07.2017</div>
+								<div class="order__info-cell order__info order__info-cost">12999 грн.</div>
+								<div class="order__info-cell order__info-status">Отменен</div>
+							</div>
+						</div>
+						<div class="order__product">	JBL CHARGE III (JBLCHARGE3BLKEU) Black</div>
+						<div class="order__address">Самовывоз из магазина</div>
+					</li>
+				</ul>
+			</div>
+			<!-- END orders-->
+
+			<!-- BEGIN hints-->
+			<div class="hints">
+				<ul class="hints__list">
+					<li class="hints__item">
+						<div class="hints__inner">
+							<div class="hints__title">Поддержка клиентов</div>
+							<div class="hints__content">
+								<div class="hints__descr">Здесь вы можете оставить свои предложения, жалобы или высказать благодарность :) Ваше обращение будет рассмотрено как можно быстрее и Вы получите ответ на указанный контактный телефон или e-mail</div>
+
+								<div class="hints__form">
+									<form action="">
+										<div class="form-field">
+											<label class="form-label form-label_lg" for="theme_appeal">Тема Вашего обращения</label>
+											<div class="form-select form-select_block">
+												<select id="theme_appeal" name="theme_appeal">
+													<option selected value="thanks">Благодарность</option>
+													<option value="thanks2">Благодарность2</option>
+													<option value="thanks3">Благодарность3</option>
+												</select>	
+											</div>
+										</div>
+										<div class="form-field form-field_mb_sm">
+											<label class="form-label form-label_lg" for="user_msg">Опишите суть своего обращения*</label>
+											<textarea class="form-textarea" id="user_msg" required value="" name='user_msg'></textarea>
+										</div>
+										<div class="form-field">
+											<input class="form-checkbox" id="for_boss" type="checkbox" name='for_boss' value="">
+											<label class="form-label form-label_check form-label_sm" for="for_boss">отправить копию директору “Смартс” <span></span>
+											</label>
+										</div>
+
+										<button class="btn-primary">
+											<span>Отправить</span>
+										</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="hints__item">
+						<div class="hints__inner">
+							<a href="" class="hints__link">
+								<div class="hints__title">Как пользоваться бонусами</div>
+							</a>
+						</div>
+					</li>
+					<li class="hints__item">
+						<div class="hints__inner">
+							<a href="" class="hints__link">
+								<div class="hints__title">Выход</div>
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- END hints-->
+		</div>
+
+		//=include partials/footer.html  
+
+	</div>
+	<!-- END page-->
+	<script src="js/app.js"></script>
+</body>
+</html>
