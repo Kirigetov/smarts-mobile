@@ -425,7 +425,9 @@ img { max-width: 100%; height: auto; }
 .service-point .info { color: #ad1547; font-size: 17px; }
 
 .static-page { margin: 0 auto; max-width: 400px; padding: 0 10px; padding-top: 10px; font-size: 16px; }
-.static-page .banner { margin: -10px -10px 10px; }
+.static-page .banner { margin: 0 -10px 10px; }
+.static-page .banner_top { margin-top: -10px; }
+.static-page .banner img { width: 100%; height: auto; }
 .static-page p { margin: 15px 0; }
 .static-page p.note { color: #8d8d8d; }
 
