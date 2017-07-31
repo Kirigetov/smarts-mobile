@@ -384,9 +384,6 @@ img { max-width: 100%; height: auto; }
 .score__value { color: #4a4a4a; font-size: 16px; font-weight: bold; }
 .score__more { display: block; float: right; color: #ad1547; font-size: 16px; line-height: 1.2; }
 
-.static-page { margin: 0 auto; max-width: 400px; padding: 0 10px; }
-.static-page .banner { margin-left: -10px; margin-right: -10px; margin-bottom: 10px; }
-
 .service-heading { text-align: center; margin-bottom: 20px; }
 .service-heading h3 { font-size: 22px; color: #000; margin: 0; font-weight: bold; line-height: 1.1; }
 .service-heading p { font-size: 18px; line-height: 1.1; }
@@ -426,6 +423,15 @@ img { max-width: 100%; height: auto; }
 .service-point .title { font-size: 22px; }
 .service-point .title_lg { font-size: 26px; }
 .service-point .info { color: #ad1547; font-size: 17px; }
+
+.static-page { margin: 0 auto; max-width: 400px; padding: 0 10px; padding-top: 10px; font-size: 16px; }
+.static-page .banner { margin: -10px -10px 10px; }
+.static-page p { margin: 15px 0; }
+.static-page p.note { color: #8d8d8d; }
+
+.warranty { margin-bottom: 30px; }
+
+.title-section { color: #a21b43; }
 
 .orders { max-width: 400px; margin: 0 auto; padding: 0 25px; }
 .orders__title { margin-bottom: 15px; }
