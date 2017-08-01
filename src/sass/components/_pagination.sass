@@ -1,0 +1,47 @@
+.pagination-box
+	margin: 25px 0
+
+.pagination
+	position: relative
+	font-size: 0
+
+	&__item
+		display: inline-block
+		vertical-align: middle
+		width: 20%
+		font-size: 16px
+		text-align: center
+	&__item:not(:last-child)
+		padding-right: 6px
+
+	&__item_forward
+		width: 40%
+
+	&__link
+		position: relative
+		display: block
+		width: 100%
+		height: 45px
+		line-height: 45px
+		background: #a21b43
+		border: 1px solid #a21b43
+		color: #fff
+		font-size: 22px
+		&.is-active
+			background: #fff
+			color: #a21b43
+
+	&__item_forward &__link
+		padding-right: 20px
+
+	&__link [class^="icon-"]
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+
+	&__link .icon-arr_right_w
+		right: 20px
+		left: auto
+		transform: translate(0, -50%)
+
