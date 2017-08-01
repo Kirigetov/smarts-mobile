@@ -1,0 +1,91 @@
+.ordering
+	&__inner
+		padding: 15px 10px 
+
+.order-list
+	&__title
+		margin: 0 -10px 15px
+		padding: 5px 25px
+		color: #a21b43
+		font-size: 16px
+		background-color: #f4f4f4
+		.icon-arr_right
+			transform: rotate(90deg) scale(0.5)
+			vertical-align: bottom
+			margin-bottom: -1px
+
+.order-hint
+	padding: 5px 5px 0
+	color: #6c6c6c
+	font-size: 12px
+
+.del-info
+	color: #4b4b4b
+	font-size: 12px
+	+clr
+	&__btn
+		float: right
+		display: block
+		width: 70px
+		height: 20px
+		line-height: 20px
+		border-radius: 3px
+		text-align: center
+
+.total
+	display: flex
+	flex-flow: row wrap
+	justify-content: space-between
+	align-items: center
+	padding: 0 5px
+	&__title,
+	&__amount
+		display: inline-block
+		font-size: 22px
+		margin-bottom: 15px
+	&__title
+		margin-right: 10px
+		color: #393939
+		font-weight: bold
+	&__amount
+		width: 110px
+		color: #a21b43
+	&__amount_currency
+		font-size: 16px
+
+.pay-info
+	padding-top: 5px
+	&__value,
+	&__text
+		display: inline-block
+		color: #ad1547
+		// vertical-align: bottom
+	&__value
+		font-size: 22px
+	&__text
+		font-size: 16px
+
+.order-success
+	padding: 20px 0
+	&__img
+		margin-bottom: 20px
+		text-align: center
+	&__img-caption
+		color: #ad1547
+		font-size: 22px
+	&__number
+		margin-bottom: 25px
+		&_text
+			display: inline-block
+			margin-right: 10px
+			font-size: 22px
+			color: #000
+		&_value
+			color: #ad1547
+			font-size: 22px
+	&__info
+		text-align: center
+		color: #231e23
+		font-size: 18px
+	.icon-check
+		margin-bottom: 30px

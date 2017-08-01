@@ -15,6 +15,8 @@
 
 .page
 	position: relative
+	display: flex
+	flex-direction: column
 	background-color: #fff
 	z-index: 2
 	transform: translate3D(0, 0, 0)
@@ -22,6 +24,9 @@
 	.is-push &
 		transform: translate3D(272px, 0, 0)
 		overflow: hidden
+
+.page-content
+	flex: 1
 
 .search
 	padding: 5px 10px

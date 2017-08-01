@@ -2,3 +2,4 @@
 //=include lib/slick.min.js
 //=include lib/jquery.touchSwipe.min.js
 //=include common.js   
+//=include _popup.js   

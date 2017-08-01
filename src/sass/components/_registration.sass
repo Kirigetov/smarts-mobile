@@ -26,6 +26,9 @@
 		margin-bottom: 10px
 	&_sm
 		font-size: 14px
+	&_pad
+		margin-bottom: 5px
+		padding-left: 13px
 	&_check
 		span
 			position: relative
@@ -44,15 +47,21 @@
 				font-size: 20px
 				transition: opacity 0.2s
 				opacity: 0
+
 .form-input
 	display: block
 	width: 100% 
 	height: 45px 
-	padding: 5px 55px 5px 10px
+	padding: 5px 10px
 	background-color: white
 	border: 1px solid #dbdfe2
 	font-size: 18px 
 	color: #393939
+	&_inline
+		display: inline-block
+		width: calc(50% - 5px)
+	&_pad
+		padding: 5px 55px 5px 10px
 
 .form-selects
 	font-size: 0
@@ -92,6 +101,29 @@
 	select
 		padding: 0 20px
 
+.form-select_right
+	float: right
+
+.form-select_mod
+	width: 70px
+	background: transparent
+	&:after
+		right: 12px
+		width: 0
+		height: 0
+		background: none
+		border: 5px solid transparent
+		border-top: 5px solid #000
+		transform: none
+	&:not(:last-child)
+		padding-right: 0
+	select
+		height: 30px
+		padding: 0 20px 0 7px
+		border-color: #818181
+		border-radius: 2px
+		font-size: 17px
+
 .form-select_lg
 	width: 40%
 	&:after
@@ -107,6 +139,19 @@
 	padding: 5px 10px
 	font-size: 16px
 
+.textarea-wrap
+	padding: 10px 20px
+	border-bottom: 1px solid #cbcbcb
+	textarea
+		display: block
+		width: 100%
+		height: 125px
+		padding: 10px 15px
+		font-size: 16px
+		color: #393939
+		resize: none
+		overflow-x: hidden
+
 .form-checkbox
 	display: none
 	visibility: hidden
@@ -116,7 +161,70 @@
 			span
 				&:after
 					opacity: 1
-	
+
+.form-radio
+	display: none
+	visibility: hidden
+	opacity: 0
+	&:checked
+		+ label
+			&:after
+				visibility: visible
+				opacity: 1
+
+.form-radio-label
+	position: relative
+	display: block
+	padding-left: 25px
+	font-size: 16px
+	line-height: 1.3
+	color: #231e23
+	&:before
+		content: ''
+		position: absolute
+		top: 4px
+		left: 0
+		width: 17px
+		height: 17px
+		border: 1px solid lighten(#ad1547, 15)
+		border-radius: 50%
+	&:after
+		content: ''
+		position: absolute
+		visibility: hidden
+		opacity: 0
+		top: 7px
+		left: 3px
+		width: 11px
+		height: 11px
+		background-color: lighten(#ad1547, 15)
+		border-radius: 50%
+		transition: opacity 0.3s
+	span
+		vertical-align: middle
+		
+.label-descr
+	display: block
+	margin-bottom: 10px
+	padding-left: 38px
+	font-weight: bold
+	color: #4b4b4b
+
+.form-icon
+	position: relative
+	display: inline-block
+	width: 29px
+	height: 29px
+	margin-right: 5px
+	opacity: 0.85
+	border-radius: 50%
+	overflow: hidden
+	i
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+
 .button-arrow
 	position: absolute
 	right: 0

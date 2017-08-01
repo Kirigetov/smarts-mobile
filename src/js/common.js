@@ -24,4 +24,19 @@ $(document).ready(function() {
 		autoplaySpeed: 2000
 	})
 
+	$('.js-tab-link').on('click touchstart', function(e) {
+		e.preventDefault();
+
+		var _this = $(this),
+			p = _this.parent(),
+			siblings = p.siblings(),
+			tabContent = '.js-tab-content';
+
+		siblings.find('.js-tab-content').slideUp();
+		// siblings.find(tabContent).removeClass('is-active');
+		p.find(tabContent).slideToggle();
+		siblings.removeClass('is-active');
+		p.toggleClass('is-active');
+	});
+
 });
