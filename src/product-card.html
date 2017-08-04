@@ -11,164 +11,16 @@
 <body class="js-main-out">
 
 	<!-- BEGIN  nav-menu-->
-	<div class="page-nav">
-		<nav class="nav-menu">
-			<ul class="nav-menu__list">
-				<li class="nav-menu__item">
-					<a href='' class="nav-menu__link">
-						<span class="nav-menu__img-wrap">
-							<span class="nav-menu__img nav-menu__img_user">
-						</span>
-						</span>
-						<span class="nav-menu__title">Личный кабинет</span>
-					</a>
-				</li>
-				<li class="nav-menu__item">
-					<a href='' class="nav-menu__link">
-						<span class="nav-menu__img-wrap">
-							<span class="nav-menu__img nav-menu__img_home">
-						</span>
-						</span>
-						<span class="nav-menu__title">Главная страница</span>
-					</a>
-				</li>
-				<li class="nav-menu__item is-active">
-					<a href='' class="nav-menu__link">
-						<span class="nav-menu__img-wrap">
-							<span class="nav-menu__img nav-menu__img_catalog">
-						</span>
-						</span>
-						<span class="nav-menu__title">Каталог товаров</span>
-					</a>
-				</li>
-				<li class="nav-menu__item">
-					<a href='' class="nav-menu__link">
-						<span class="nav-menu__img-wrap">
-							<span class="nav-menu__img nav-menu__img_search">
-						</span>
-						</span>
-						<span class="nav-menu__title">Поиск товаров</span>
-					</a>
-				</li>
-				<li class="nav-menu__item">
-					<a href='' class="nav-menu__link">
-						<span class="nav-menu__img-wrap">
-							<span class="nav-menu__img nav-menu__img_cart">
-						</span>
-						</span>
-						<span class="nav-menu__title">Корзина</span>
-					</a>
-				</li>
-				<li class="nav-menu__item">
-					<a href='' class="nav-menu__link">
-						<span class="nav-menu__img-wrap">
-							<span class="nav-menu__img nav-menu__img_diagram">
-						</span>
-						</span>
-						<span class="nav-menu__title">Оплата частями</span>
-					</a>
-				</li>
-				<li class="nav-menu__item">
-					<a href='' class="nav-menu__link">
-						<span class="nav-menu__img-wrap">
-							<span class="nav-menu__img nav-menu__img_payment">
-						</span>
-						</span>
-						<span class="nav-menu__title">Рассрочка</span>
-					</a>
-				</li>
-				<li class="nav-menu__item">
-					<a href='' class="nav-menu__link">
-						<span class="nav-menu__img-wrap">
-							<span class="nav-menu__img nav-menu__img_exchange">
-						</span>
-						</span>
-						<span class="nav-menu__title">Смартс-обмен</span>
-					</a>
-				</li>
-				<li class="nav-menu__item">
-					<a href='' class="nav-menu__link">
-						<span class="nav-menu__img-wrap">
-							<span class="nav-menu__img nav-menu__img_actions">
-						</span>
-						</span>
-						<span class="nav-menu__title">Акции</span>
-					</a>
-				</li>
-				<li class="nav-menu__item">
-					<a href='' class="nav-menu__link">
-						<span class="nav-menu__img-wrap">
-							<span class="nav-menu__img nav-menu__img_shop">
-						</span>
-						</span>
-						<span class="nav-menu__title">Магазины Смартс</span>
-					</a>
-				</li>
-				<li class="nav-menu__item">
-					<a href='' class="nav-menu__link">
-						<span class="nav-menu__img-wrap">
-							<span class="nav-menu__img nav-menu__img_delivery">
-						</span>
-						</span>
-						<span class="nav-menu__title">Доставка</span>
-					</a>
-				</li>
-				<li class="nav-menu__item">
-					<a href='' class="nav-menu__link">
-						<span class="nav-menu__img-wrap">
-							<span class="nav-menu__img nav-menu__img_service">
-						</span>
-						</span>
-						<span class="nav-menu__title">Сервисный центр</span>
-					</a>
-				</li>
-	
-			</ul>
-		</nav>
-	
-		<div class="contacts contacts_white">
-			<h3 class="contacts__title">Поддержка клиентов</h3>
-			<a href="tel:096 1 500 500" class="contacts__phone phone-btn"><span class="icon-phone"></span>096 1 500 500</a>
-			<div class="contacts__schedule schedule">
-				<p>Работаем для Вас <br><span class="schedule__days">ПН-СБ</span> <span class="schedule__time">10:00 - 20:00</span></p>
-			</div>
-		</div>
-	</div>
+	//=include partials/nav-menu.html  
 	<!-- END nav-menu-->
 	
 	<!-- BEGIN  page-->	
 	<div class="page">
 
-		<!-- BEGIN header-->
-
-		<header class="header">
-
-			<a href="" class="menu-btn js-menu-btn"><span class="icon-menu"></span></a>
-
-			<a href="" class="logo" data-role="none">
-
-				<img src="img/logo_sm.svg" alt="" class="logo__img">
-
-			</a>
-
-			<button class="cart-btn"><span class="icon-cart"></span></button>
-
-		</header>
-
-		<!-- END header-->
+		//=include partials/header.html  
 
 		<div class="page-content">
 
-			<!-- BEGIN search-->
-			<div class="search">
-				<form action="" class="search__form">
-					<input type="text" class="search__input" placeholder="Поиск">
-					<button class="search__btn" type="submit">
-						<span class="icon-search_b"></span>
-					</button>
-				</form>
-			</div>
-			<!-- END search-->
 
 			<!-- BEGIN slider-->
 			<div class="slider border-bold">
@@ -191,6 +43,79 @@
 				</div>
 			</div>
 			<!-- END slider-->
+
+			<!-- BEGIN tabs-->
+			<div class="tabs ">
+				<ul class="tabs__list">
+					<li class="tabs__item">
+						<a href="" class="tabs__link js-tab-link">Акции к этому товару</a>
+						<div class="tabs__content js-tab-content">
+							<div class="product-actions">
+								<div class="product-actions__bg" style="background-image: url(img/actions_bg.png);">
+									<div class="product-actions__logo"><img src="img/logo_sm.svg" alt="" class="logo__img"></div>
+									<div class="product-actions__text">возвращаем на бонус <span class="product-actions__amount">1500 </span>грн.</div>
+								</div>
+								<div class="product-actions__content">
+									Сертификат в рестораны сети Гурмания на 500 грн. в подарок к этому смартфону!
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="tabs__item">
+						<a href="" class="tabs__link js-tab-link">Характеристики
+							<span class="tabs__arrow">
+								<span class="icon-arr_right"></span>
+							</span>
+						</a>
+						<div class="tabs__content js-tab-content">
+
+						</div>
+					</li>
+					<li class="tabs__item">
+						<a href="" class="tabs__link js-tab-link">Описание
+							<span class="tabs__arrow">
+								<span class="icon-arr_right"></span>
+							</span>
+						</a>
+						<div class="tabs__content js-tab-content">
+
+						</div>
+					</li>
+					<li class="tabs__item">
+						<a href="" class="tabs__link js-tab-link">Отзывы 5
+							<span class="tabs__arrow">
+								<span class="icon-arr_right"></span>
+							</span>
+						</a>
+						<div class="tabs__content js-tab-content">
+
+						</div>
+					</li>
+					<li class="tabs__item">
+						<a href="" class="tabs__link js-tab-link">Аксессуары
+							<span class="tabs__arrow">
+								<span class="icon-arr_right"></span>
+							</span>
+						</a>
+						<div class="tabs__content js-tab-content">
+
+						</div>
+					</li>
+					<li class="tabs__item">
+						<a href="" class="tabs__link js-tab-link">Ранее просматривали
+							<span class="tabs__arrow">
+								<span class="icon-arr_right"></span>
+							</span>
+						</a>
+						<div class="tabs__content js-tab-content">
+
+						</div>
+					</li>
+
+				</ul>
+			</div>
+			<!-- END tabs-->
+
 
 			<!-- BEGIN categories-->
 			<div class="categories">
@@ -373,39 +298,7 @@
 
 		</div>
 
-		<!-- BEGIN footer-->
-
-		<footer class="footer">
-
-			<div class="footer__top border-bold">
-
-				<div class="footer__contacts contacts">
-
-					<h3 class="contacts__title">Поддержка клиентов</h3>
-
-					<a href="tel:096 1 500 500" class="contacts__phone phone-btn"><span class="icon-phone"></span>096 1 500 500</a>
-
-					<div class="contacts__schedule schedule">
-
-						<p>Работаем для Вас <span class="schedule__days">ПН-СБ</span> <span class="schedule__time">10:00 - 20:00</span></p>
-
-					</div>
-
-				</div>
-
-			</div>
-
-			<div class="footer__bottom">
-
-				<div class="copyright">© Интернет-магазин Смартс 2017</div>
-
-			</div>
-
-		</footer>
-
-		<!-- BEGIN footer-->
-
-		
+		//=include partials/footer.html  
 
 	</div>
 	<!-- END page-->
