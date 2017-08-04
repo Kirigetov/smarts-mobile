@@ -62,6 +62,14 @@ $(document).ready(function() {
 		autoplaySpeed: 2000
 	})
 
+	$('.js-prod-slider').slick({
+		dots: false,
+		slidesToScroll: 1,
+		slidesToShow: 1,
+		nextArrow: '.slide-arrow_right',
+		prevArrow: '.slide-arrow_left'
+	})
+
 	$('.js-tab-link').on('click touchstart', function(e) {
 		e.preventDefault();
 

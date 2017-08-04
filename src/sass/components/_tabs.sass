@@ -5,11 +5,12 @@
 	&__item
 	&__content
 		display: none
-		
 	&__link
+		position: relative
 		display: block
 		line-height: 45px
 		height: 45px
+		padding: 0 12px
 		font-size: 22px
 		color: #787878
 		background-color: #f6f6f6
@@ -18,3 +19,11 @@
 			border-top: 1px solid #cbcbcb
 		&_center
 			text-align: center
+	&__arrow
+		position: absolute
+		top: 50%
+		right: 17px
+		transform: translateY(-50%) rotate(90deg)
+		transition: transform .2s
+		.is-active &
+			transform: translateY(-50%) rotate(270deg)

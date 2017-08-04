@@ -1,0 +1,117 @@
+.product
+	&__inner
+		padding: 20px 10px 10px
+		border-bottom: 1px solid #cbcbcb
+	&__header
+		margin-bottom: 10px
+
+	&__title
+		font-size: 18px
+		line-height: 1.3
+		font-weight: normal
+		color: #000
+		text-transform: uppercase
+	&__subtitle
+		font-size: 12px
+		color: #787878
+	&__pay-plan
+		position: absolute
+		right: 0 
+		bottom: 0
+		z-index: 3
+		font-size: 0
+	&__slider
+		position: relative
+
+.item-slider
+
+.item-slide
+	&__inner
+		display: block
+		max-width: 125px
+		margin: 0 auto
+		img
+			max-width: 100%
+			width: 100%
+			height: auto
+
+.slide-arrow
+	position: absolute
+	top: 0
+	bottom: 0
+	font-size: 0
+	width: 30px
+	z-index: 2
+	&_left
+		left: 5px
+	&_right
+		right: 5px
+	.icon-arr_right
+		position: absolute
+		top: 45%
+		left: 50%
+		bottom: 0
+		transform: translate(-50%, -50%)
+
+.slide-arrow_right
+	.icon-arr_right
+		right: 0
+.slide-arrow_left
+	.icon-arr_right
+		transform: translate(-50%, -50%) rotate(180deg)
+
+.product-features
+	&:not(:last-child)
+		margin-bottom: 10px
+	&__title
+		margin-bottom: 5px
+		font-size: 18px
+		color: #000
+	&__list
+		font-size: 0
+	&__item
+		display: inline-block
+		min-width: 50px
+		height: 50px
+		line-height: 50px
+		background-color: #cfcfcf
+		&:not(:last-child)
+			margin-right: 6px
+	&__Link
+		display: block
+		color: #000
+
+
+.product-actions
+	&__bg
+		height: 44px
+		padding: 0 10px
+		border-bottom: 1px solid #cbcbcb
+		background-repeat: no-repeat
+		+clr
+		font-size: 0
+		background-position: 110% 25%
+		+r(400)
+			background-position: 140% 25%
+	&__logo
+		float: left
+		width: 50%
+		padding-top: 7px
+	&__content
+		padding: 10px 10px
+		color: #a21b43
+		font-size: 16px
+	&__caption
+		margin-left: 50%
+		width: 50%
+		text-shadow: 0 3px 7px black
+		color: #fff
+		font-size: 14px
+		font-weight: bold
+		text-align: center
+		line-height: 1
+	&__text-block
+		display: block
+		
+	&__amount
+		font-size: 28px
