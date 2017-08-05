@@ -37,9 +37,10 @@ $(document).ready(function() {
 
 		var _this = $(this),
 			p = _this.parent(),
-			siblings = p.siblings(),
+			siblings = p.siblings().filter('.js-tab-item'),
 			tabContent = '.js-tab-content';
 
+console.log(siblings);
 		siblings.find('.js-tab-content').slideUp();
 		// siblings.find(tabContent).removeClass('is-active');
 		p.find(tabContent).slideToggle();

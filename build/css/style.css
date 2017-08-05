@@ -357,6 +357,7 @@ img { max-width: 100%; height: auto; }
 .registration .logo_club { width: 190px; }
 
 .form { text-align: left; }
+.form_pad { padding: 0 30px; }
 
 .form-field { position: relative; margin-bottom: 20px; }
 .form-field_mb_sm { margin-bottom: 10px; }
@@ -392,7 +393,11 @@ img { max-width: 100%; height: auto; }
 .form-select_lg { width: 40%; }
 .form-select_lg:after { right: 15px; }
 
-.form-textarea { display: block; width: 100%; min-height: 100px; background-color: white; border: 1px solid #dbdfe2; resize: none; padding: 5px 10px; font-size: 16px; }
+.form-textarea { display: block; width: 100%; font-size: 16px; color: #000; }
+.form-textarea::-webkit-input-placeholder { color: #000; font-size: 16px; }
+.form-textarea::-moz-placeholder { color: #000; font-size: 16px; }
+.form-textarea:-ms-input-placeholder { color: #000; font-size: 16px; }
+.form-textarea::placeholder { color: #000; font-size: 16px; }
 
 .textarea-wrap { padding: 10px 20px; border-bottom: 1px solid #cbcbcb; }
 .textarea-wrap textarea { display: block; width: 100%; height: 125px; padding: 10px 15px; font-size: 16px; color: #393939; resize: none; overflow-x: hidden; }
@@ -589,12 +594,31 @@ img { max-width: 100%; height: auto; }
 .order-success .icon-check { margin-bottom: 30px; }
 
 .tabs_out { margin: 0 -10px 20px; }
-.tabs__content { display: none; }
+.tabs__content { display: none; padding: 10px; }
+.tabs__content_pad_no { padding: 0; }
+.tabs__content h4 { font-weight: bold; }
+.tabs__content h4, .tabs__content ul { margin-bottom: 20px; }
+.tabs__content h4, .tabs__content li, .tabs__content p { font-size: 16px; line-height: 1.3; color: #1a1a1a; }
+.tabs__content p { margin-bottom: 20px; }
 .tabs__link { position: relative; display: block; line-height: 45px; height: 45px; padding: 0 12px; font-size: 22px; color: #787878; background-color: #f6f6f6; border-bottom: 1px solid #cbcbcb; }
 .tabs__link:first-child { border-top: 1px solid #cbcbcb; }
 .tabs__link_center { text-align: center; }
 .tabs__arrow { position: absolute; top: 50%; right: 17px; -webkit-transform: translateY(-50%) rotate(90deg); -ms-transform: translateY(-50%) rotate(90deg); transform: translateY(-50%) rotate(90deg); -webkit-transition: -webkit-transform 0.2s; transition: transform 0.2s; }
 .is-active .tabs__arrow { -webkit-transform: translateY(-50%) rotate(270deg); -ms-transform: translateY(-50%) rotate(270deg); transform: translateY(-50%) rotate(270deg); }
+
+.product-video { position: relative; padding-bottom: 56.5%; height: 0; width: 100%; margin-bottom: 15px; }
+.product-video iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+.testimonials__item { margin-bottom: 20px; }
+
+.testimonial__header { margin-bottom: 10px; *zoom: 1; }
+.testimonial__header:after { content: " "; display: table; clear: both; }
+.testimonial__content { padding: 0 15px; }
+.testimonial__user, .testimonial__date { font-size: 16px; }
+.testimonial__user { float: left; color: #a21b43; }
+.testimonial__date { float: right; color: #828282; }
+
+.more-items { display: block; margin-bottom: 10px; padding: 5px 0; text-align: center; font-size: 16px; color: #a21b43; }
 
 .popup { display: none; position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.65); z-index: 10; }
 
@@ -611,7 +635,7 @@ img { max-width: 100%; height: auto; }
 .product__title { font-size: 18px; line-height: 1.3; font-weight: normal; color: #000; text-transform: uppercase; }
 .product__subtitle { font-size: 12px; color: #787878; }
 .product__pay-plan { position: absolute; right: 0; bottom: 0; z-index: 3; font-size: 0; }
-.product__slider { position: relative; }
+.product__slider { position: relative; margin-bottom: 20px; }
 
 .item-slide__inner { display: block; max-width: 125px; margin: 0 auto; }
 .item-slide__inner img { max-width: 100%; width: 100%; height: auto; }
@@ -628,9 +652,23 @@ img { max-width: 100%; height: auto; }
 .product-features:not(:last-child) { margin-bottom: 10px; }
 .product-features__title { margin-bottom: 5px; font-size: 18px; color: #000; }
 .product-features__list { font-size: 0; }
-.product-features__item { display: inline-block; min-width: 50px; height: 50px; line-height: 50px; background-color: #cfcfcf; }
+.product-features__item { display: inline-block; min-width: 50px; height: 50px; line-height: 50px; }
 .product-features__item:not(:last-child) { margin-right: 6px; }
-.product-features__Link { display: block; color: #000; }
+.product-features__link { display: block; height: 100%; padding: 0 5px; background-color: #cfcfcf; color: #000; font-size: 18px; text-transform: uppercase; text-align: center; }
+.product-color .product-features__link.is-active { opacity: 0.88; border: 3px solid #306922; }
+.product-props .product-features__link.is-active { background-color: #8c8c8c; }
+
+.store { *zoom: 1; padding: 15px 10px 10px; }
+.store:after { content: " "; display: table; clear: both; }
+.store__inner { display: table; float: right; max-width: 320px; width: 100%; }
+.store__row { display: table-row; }
+.store__cell { display: table-cell; padding: 0 0 10px; vertical-align: middle; text-align: right; }
+.store__btn-caption { display: inline-block; padding: 0 5px; color: #454545; }
+.store__btn-caption a { color: #a21b43; }
+.store__btn { display: inline-block; width: 200px; height: 45px; line-height: 45px; padding: 0 10px; font-size: 22px; color: #fff; text-align: center; }
+.store__btn_red { background-color: #a21b43; }
+.store__btn_orange { background-color: #ffc000; color: #a21b43; }
+.store__btn-currency { display: inline-block; margin-right: 10px; font-size: 16px; }
 
 .product-actions__bg { height: 44px; padding: 0 10px; border-bottom: 1px solid #cbcbcb; background-repeat: no-repeat; *zoom: 1; font-size: 0; background-position: 110% 25%; }
 .product-actions__bg:after { content: " "; display: table; clear: both; }
@@ -643,6 +681,8 @@ img { max-width: 100%; height: auto; }
  *{ -webkit-text-size-adjust: none; } }
 @media only screen and (max-width: 400px){
  .product-actions__bg{ background-position: 140% 25%; } }
+@media only screen and (max-width: 359px){
+ .store__btn{ width: 190px; padding: 0 5px; } }
 
 
 

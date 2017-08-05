@@ -22,6 +22,7 @@
 		font-size: 0
 	&__slider
 		position: relative
+		margin-bottom: 20px
 
 .item-slider
 
@@ -74,12 +75,66 @@
 		min-width: 50px
 		height: 50px
 		line-height: 50px
-		background-color: #cfcfcf
 		&:not(:last-child)
 			margin-right: 6px
-	&__Link
+	&__link
 		display: block
+		height: 100%
+		padding: 0 5px
+		background-color: #cfcfcf
 		color: #000
+		font-size: 18px
+		text-transform: uppercase
+		text-align: center
+		.product-color &.is-active
+			opacity: 0.88
+			border: 3px solid #306922
+		.product-props &.is-active
+			background-color: #8c8c8c
+
+.store
+	+clr
+	padding: 15px 10px 10px
+	&__inner
+		display: table
+		float: right
+		max-width: 320px
+		width: 100%
+		
+	&__row
+		display: table-row
+	&__cell
+		display: table-cell
+		padding: 0 0 10px
+		vertical-align: middle
+		text-align: right
+	&__btn-caption
+		display: inline-block
+		padding: 0 5px
+		color: #454545
+		a
+			color: #a21b43
+	&__btn
+		display: inline-block
+		width: 200px
+		height: 45px
+		line-height: 45px
+		padding: 0 10px
+		font-size: 22px
+		color: #fff
+		text-align: center
+		+r(359)
+			width: 190px
+			padding: 0 5px
+		&_red
+			background-color: #a21b43
+		&_orange
+			background-color: #ffc000
+			color: #a21b43
+	&__btn-currency
+		display: inline-block
+		margin-right: 10px
+		font-size: 16px
 
 
 .product-actions
