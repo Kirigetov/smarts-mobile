@@ -113,13 +113,11 @@ $(document).ready(function() {
 	});
 
 
-console.log($(".header").offset().top);
-
-
 	    // scroll button
     $(".js-scroll-top").on("click", function(){
         $('html, body').animate({
-            scrollTop: $(".header").offset().top},500);
+            scrollTop: 0
+        }, 300);
         return false;
     });
 

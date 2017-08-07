@@ -1,8 +1,6 @@
 @charset "UTF-8";
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; vertical-align: baseline; }
 
-body, html { height: 100%; }
-
 img, fieldset, a img { border: none; }
 
 input[type="text"], input[type="email"], input[type="tel"], textarea { -webkit-appearance: none; }
@@ -175,7 +173,7 @@ a { text-decoration: none; }
 .slick-dots button { display: block; width: 10px; height: 10px; background: #fff; -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25); box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25); cursor: pointer; font: 0/0 a; text-shadow: none; color: transparent; border-radius: 50%; }
 
 @font-face { font-family: MyriadPro-Reg; src: url("fonts/MyriadPro-Regular.eot"); src: url("fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/MyriadPro-Regular.woff2") format("woff2"), url("fonts/MyriadPro-Regular.woff") format("woff"), url("fonts/MyriadPro-Regular.ttf") format("truetype"); font-weight: normal; font-style: normal; }
-html, body { height: 100%; min-height: 100%; overflow-x: hidden; }
+html, body { min-height: 100%; overflow-x: auto; }
 
 body { font-family: MyriadPro-Reg, Arial, sans-serif; font-size: 14px; line-height: 1.3; }
 
@@ -197,6 +195,8 @@ h3, .title-h3 { font-size: 20px; font-weight: normal; color: #000; margin-bottom
 .subtitle_small { font-size: 14px; line-height: 1.4; color: #000; }
 .subtitle_mb_lg { margin-bottom: 25px; }
 .subtitle_bold { font-weight: bold; }
+.subtitle_center { text-align: center; }
+.subtitle_mb_no { margin-bottom: 0; }
 
 .subtext { display: block; margin-bottom: 5px; color: #5b5b5b; font-size: 16px; line-height: 1.2; text-align: center; }
 .subtext_red { color: #a21b43; }
@@ -215,10 +215,11 @@ img { max-width: 100%; height: auto; }
 
 .btn-link { position: relative; display: inline-block; height: 45px; padding: 6px; color: #a21b43; font-size: 16px; line-height: 1; vertical-align: top; }
 
-.btn-wrap { display: inline-block; width: -webkit-calc(50% - 5px); width: calc(50% - 5px); margin-left: 5px; vertical-align: top; }
+.btn-wrap { display: inline-block; width: -webkit-calc(50% - 5px); width: calc(50% - 5px); vertical-align: top; }
 .btn-wrap button { display: block; width: 100%; }
 
-.scroll-top { display: none; position: fixed; bottom: 40px; right: 25px; z-index: 100; width: 36px; height: 36px; background-color: rgba(0, 0, 0, 0.45); border-radius: 3px; }
+.scroll-top { display: block; position: fixed; bottom: 40px; right: 15px; z-index: 100; width: 36px; height: 36px; background-color: rgba(0, 0, 0, 0.45); border-radius: 3px; visibility: hidden; opacity: 0; -webkit-transition: opacity 0.3s; transition: opacity 0.3s; }
+.scroll-top.is-visible { opacity: 1; visibility: visible; }
 .scroll-top span { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 
 .page-nav { position: fixed; top: 0; bottom: 0; width: 272px; height: 100%; overflow-x: hidden; background-color: #a21b43; z-index: 3; -webkit-transform: translate3D(-272px, 0, 0); -ms-transform: translate3D(-272px, 0, 0); transform: translate3D(-272px, 0, 0); -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.445, 0.05, 0.55, 0.95); transition: transform 0.6s cubic-bezier(0.445, 0.05, 0.55, 0.95); }
@@ -430,6 +431,8 @@ img { max-width: 100%; height: auto; }
 
 .button-arrow { position: absolute; right: 0; bottom: 0; width: 50px; height: 45px; background-color: #a21b43; border: none; }
 .button-arrow .icon-arr_right_w { position: absolute; top: 50%; left: 54%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+.button-arrow_block { position: relative; display: block; width: 100%; max-width: 300px; margin: 0 auto 20px; font-size: 22px; color: #fff; }
+.button-arrow_block .icon-arr_right_w { left: auto; right: 15px; }
 
 .socials { margin-bottom: 40px; }
 .socials__title { margin-bottom: 20px; line-height: 1; }
@@ -613,7 +616,11 @@ img { max-width: 100%; height: auto; }
 .order-success__number_text { display: inline-block; margin-right: 10px; font-size: 22px; color: #000; }
 .order-success__number_value { color: #ad1547; font-size: 22px; }
 .order-success__info { text-align: center; color: #231e23; font-size: 18px; }
+.order-success__info_mb { margin-bottom: 40px; }
+.order-success__info_lg { font-size: 22px; }
 .order-success .icon-check { margin-bottom: 30px; }
+
+.text-red { color: #ad1547; }
 
 .tabs_out { margin: 0 -10px 20px; }
 .tabs__content { display: none; padding: 10px; }
@@ -648,7 +655,7 @@ img { max-width: 100%; height: auto; }
 .popup { display: none; position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.65); z-index: 10; }
 
 /* Inner */
-.popup__inner { position: absolute; top: 20px; left: 50%; bottom: 20px; max-width: 500px; width: -webkit-calc(100% - 20px); width: calc(100% - 20px); padding: 20px 15px; -webkit-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); transform: translate(-50%, 0); -webkit-box-shadow: 0px 2px 6px black; box-shadow: 0px 2px 6px black; border-radius: 3px; background-color: #ececec; -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.35); box-shadow: 0 3px 7px rgba(0, 0, 0, 0.35); overflow-y: auto; }
+.popup__inner { position: absolute; top: 20px; left: 50%; max-width: 500px; width: -webkit-calc(100% - 20px); width: calc(100% - 20px); padding: 20px 15px; -webkit-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); transform: translate(-50%, 0); -webkit-box-shadow: 0px 2px 6px black; box-shadow: 0px 2px 6px black; border-radius: 3px; background-color: #ececec; -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.35); box-shadow: 0 3px 7px rgba(0, 0, 0, 0.35); overflow-y: auto; }
 
 /* Close Button */
 .popup__close { position: absolute; top: 15px; right: 15px; width: 30px; height: 30px; display: inline-block; padding-top: 4px; -webkit-transform: translate(50%, -50%); -ms-transform: translate(50%, -50%); transform: translate(50%, -50%); font-size: 20px; text-align: center; line-height: 100%; color: #000; }

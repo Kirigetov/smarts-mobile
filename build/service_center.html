@@ -299,7 +299,7 @@
 						</div>
 						<div class="service-buttons">
 							<div class="row">
-								<button class="btn-default  btn-order">
+								<button class="btn-default  btn-order" data-popup-open="popup-5">
 									<span>Отправить заявку</span>
 								</button>
 							</div>
@@ -384,7 +384,7 @@
 						</div>
 						<div class="service-buttons">
 							<div class="row">
-								<button class="btn-default  btn-order">
+								<button class="btn-default  btn-order" data-popup-open="popup-5">
 									<span>Отправить заявку</span>
 								</button>
 							</div>
@@ -552,6 +552,59 @@
 
 	</div>
 	<!-- END page-->
+
+	<div class="popup" data-popup="popup-5">
+	    <div class="popup__inner">
+		    <div class="title-h2">Ваша заявка отправлена!</div>
+	        
+				<div class="subtitle subtitle_center subtitle_small">заполняйте заявку и получайте 10% <br> скидки на любой вид ремонта!</div>
+
+				<div class="form">
+					<form action="">
+						<div class="form-field">
+							<label class="form-label" for="user_name">Ваше имя*</label>
+							<input class="form-input" required name='user_name' id="user_name" type="text" value="">
+						</div>
+
+						<div class="form-field">
+							<label class="form-label" for="tel_number">Ваш телефон*</label>
+							<input class="form-input" required id="tel_number" name='tel_number' type="text" value="" >
+						</div>
+						 
+						<button class="button-arrow button-arrow_block">
+							<span>отправить заявку</span>
+							<i class="icon-arr_right_w"></i>
+						</button>
+					</form>
+				</div>
+
+				<div class="subtitle subtitle_mb_no subtitle_small">менеджер сервисного центра Смартс перезвонит Вам как только получит Вашу заявку!</div>
+
+		        <a class="popup__close" data-popup-close="popup-5" href="#">x</a>
+			
+			</div>
+	    </div>
+	</div>
+
+	<div class="popup" data-popup="popup-6">
+	    <div class="popup__inner">
+		    <div class="title-h2">Ваша заявка отправлена!</div>
+	        
+			<div class="order-success">
+
+				<div class="order-success__info order-success__info_mb text-red">Менеджер сервисного центра Смартс свяжется с Вами в ближайшее время!</div>
+				<div class="order-success__info text-red order-success__info_lg">Долго ждете звонка?
+				<br>068 703 07 07</div>
+			</div>
+
+	        <a class="popup__close" data-popup-close="popup-6" href="#">x</a>
+	    </div>
+	</div>
+
+	<!-- BEGIN BUTTON TO UP -->
+	<button class="scroll-top js-scroll-top" type="button"><span class="icon-btn_up"></span></button>
+	<!-- END BUTTON TO UP -->
+
 	<script src="js/app.js"></script>
 </body>
 </html>
