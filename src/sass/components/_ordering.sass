@@ -13,6 +13,54 @@
 			transform: rotate(90deg) scale(0.5)
 			vertical-align: bottom
 			margin-bottom: -1px
+	&__edit
+		display: block
+		margin: -10px -10px 0
+		padding: 10px
+		font-size: 15px
+		text-align: right
+		border-bottom: 1px solid #cbcbcb
+	&__info
+		display: table
+		width: 100%
+		table-layout: fixed
+		&-row
+			display: table-row
+		&-cell
+			display: table-cell
+			padding: 10px 5px
+			vertical-align: middle
+			&:first-child
+				width: 100px
+				text-align: center
+		&-name
+			margin-left: 80px
+			overflow: hidden
+			vertical-align: middle
+	&__costs
+		font-size: 0
+		&-title
+			font-size: 14px
+			font-weight: normal
+			color: #787878		
+		&-sections
+			display: inline-block
+			vertical-align: top
+			width: 25%
+			margin-bottom: 10px
+			padding: 0 5px
+			+r(399)
+				width: 50%
+
+		&-value
+			height: 30px
+			font-size: 20px
+			font-weight: bold
+		&-currency
+			font-size: 14px
+		&-amount
+			color: #a21b43
+
 
 .order-hint
 	padding: 5px 5px 0
